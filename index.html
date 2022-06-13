@@ -411,39 +411,44 @@
         </button>
         <p class="modal-title">Оставте свои данные, мы вам перезвоним</p>
         <form>
-          <label class="modal-label">
-            Имя
-            <input
-              type="text"
-              name="user-name"
-              class="modal-input"
-              required
-              title="Введите ваше имя"
-            />
-          </label>
-          <label class="modal-label">
-            Телефон
-            <input
-              type="tel"
-              name="user-tel"
-              class="modal-input"
-              required
-              title="Введите ваш номер телефона"
-            />
-          </label>
-          <label class="modal-label">
-            Почта
-            <input type="email" name="user-email" class="modal-input" title="Введите вашу почту" />
-          </label>
-          <label class="modal-label">
-            Комментарий
-            <input
-              type="text"
-              class="modal-input"
-              placeholder="Введите текст"
-              title="Напишите ваш комментарий"
-            />
-          </label>
+          <label class="modal-label" for="user-name"> Имя </label>
+          <input
+            type="text"
+            name="user-name"
+            class="modal-input"
+            required
+            title="Введите ваше имя"
+            id="user-name"
+          />
+
+          <label class="modal-label" for="user-tel"> Телефон </label>
+          <input
+            type="tel"
+            name="user-tel"
+            class="modal-input"
+            required
+            title="Введите ваш номер телефона"
+            id="user-tel"
+          />
+
+          <label class="modal-label" for="user-email"> Почта </label>
+          <input
+            type="email"
+            name="user-email"
+            class="modal-input"
+            title="Введите вашу почту"
+            id="user-email"
+          />
+          <div class="modal-field">
+            <label class="modal-label" for="user-text"> Комментарий </label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              placeholder="Введите текс"
+              class="modal-text"
+            ></textarea>
+          </div>
+
           <button class="input-btn-send" type="submit">Отправить</button>
         </form>
       </div>
