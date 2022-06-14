@@ -715,6 +715,7 @@ img {
   flex-wrap: wrap;
   margin: -15px;
 }
+/*-----MODAL WINDOW----*/
 .backdrop {
   width: 100%;
   height: 100%;
@@ -805,4 +806,14 @@ img {
 .input-btn-send:hover,
 .input-btn-send:focus {
   background: #188ce8;
+}
+
+.input-plus {
+  width: 400.62px;
+  height: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
