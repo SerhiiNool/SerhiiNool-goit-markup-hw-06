@@ -411,48 +411,68 @@
         </button>
         <p class="modal-title">Оставте свои данные, мы вам перезвоним</p>
         <form>
-          <label class="modal-label" for="user-name"> Имя </label>
-          <input
-            type="text"
-            name="user-name"
-            class="modal-input"
-            required
-            title="Введите ваше имя"
-            id="user-name"
-          />
-
-          <label class="modal-label" for="user-tel"> Телефон </label>
-          <input
-            type="tel"
-            name="user-tel"
-            class="modal-input"
-            required
-            title="Введите ваш номер телефона"
-            id="user-tel"
-          />
-
-          <label class="modal-label" for="user-email"> Почта </label>
-          <input
-            type="email"
-            name="user-email"
-            class="modal-input"
-            title="Введите вашу почту"
-            id="user-email"
-          />
+          <div class="modal-field">
+            <label class="modal-label" for="user-name"> Имя </label>
+            <div class="modal-input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                class="modal-input"
+                required
+                title="Введите ваше имя"
+                id="user-name"
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./img/icon.svg#icon-person-modal"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user-tel"> Телефон </label>
+            <div class="modal-input-wrap">
+              <input
+                type="tel"
+                name="user-tel"
+                class="modal-input"
+                required
+                title="Введите ваш номер телефона"
+                id="user-tel"
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./img/icon.svg#icon-phone-modal"/use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user-email"> Почта </label>
+            <div class="modal-input-wrap">
+              <input
+                type="email"
+                name="user-email"
+                class="modal-input"
+                title="Введите вашу почту"
+                id="user-email"
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./img/icon.svg#icon-email-modal"></use>
+              </svg>
+            </div>
+          </div>
           <div class="modal-field">
             <label class="modal-label" for="user-text"> Комментарий </label>
-            <textarea
-              name="user-text"
-              id="user-text"
-              placeholder="Введите текс"
-              class="modal-text"
-            ></textarea>
-            <input class="input-checkbox" type="checkbox" id="plus" name="add" value="plus" />
-            <label for="plus" class="input-plus"
-              >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
-            </label>
+            <div class="modal-input-wrap">
+              <textarea
+                name="user-text"
+                id="user-text"
+                placeholder="Введите текс"
+                class="modal-text"
+              ></textarea>
+              <input class="input-checkbox" type="checkbox" id="plus" name="add" value="plus" />
+              <label for="plus" class="input-plus"
+                >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+              </label>
+            </div>
           </div>
-
           <button class="input-btn-send" type="submit">Отправить</button>
         </form>
       </div>
