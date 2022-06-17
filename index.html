@@ -467,12 +467,26 @@
                 placeholder="Введите текс"
                 class="modal-text"
               ></textarea>
-              <input class="input-checkbox" type="checkbox" id="plus" name="add" value="plus" />
-              <label for="plus" class="input-plus"
-                >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
-              </label>
             </div>
           </div>
+          <div class="modal-field">
+            <input
+              class="input-check visually-hidden"
+              type="checkbox"
+              id="input-check"
+              name="add"
+              value="add"
+            />
+            <label for="input-check" class="check-text">
+              <span
+                ><svg class="check-icon" width="11" height="8">
+                  <use href="./img/icon.svg#icon-check"></use>
+                </svg>
+              </span>
+              Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+            </label>
+          </div>
+
           <button class="input-btn-send" type="submit">Отправить</button>
         </form>
       </div>

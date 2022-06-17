@@ -31,7 +31,18 @@ img {
 .list {
   list-style: none;
 }
-
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 /*-------HEADER-------*/
 
 .header {
@@ -832,13 +843,45 @@ img {
 .input-btn-send:focus {
   background: #188ce8;
 }
-
-.input-plus {
-  width: 400.62px;
-  height: 24px;
-  font-weight: 400;
+.check-text {
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
   color: #757575;
+  display: flex;
+  align-items: center;
 }
+.check-text span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.check-icon {
+  fill: transparent;
+}
+.input-check:checked + .check-text span {
+  background-color: #2196f3;
+  border: transparent;
+  border-radius: 2px;
+}
+.input-check:focus + .check-text span {
+  border-color: #2196f3;
+}
+.input-check:checked + .check-text .check-icon {
+  fill: #ffffff;
+}
+/* .check-text::before {
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+.input-check:checked + .check-text::before {
+  background-color: #2196f3;
+  border: none;
+} */
