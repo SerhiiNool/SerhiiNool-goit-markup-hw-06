@@ -2,6 +2,7 @@
   --white-color: #ffffff;
   --grey-color: #757575;
   --blue-color: #2196f3;
+  --blue-backgraund: #188ce8;
   --black-text: #212121;
   --black-back: #2f303a;
 }
@@ -9,8 +10,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--white-color);
-  font-family: 14px;
-  cursor: pointer;
+  font-size: 14px;
   margin: 0 auto;
 }
 img {
@@ -475,7 +475,7 @@ img {
 }
 .clients-soc-link:hover,
 .clients-soc-link:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--blue-color);
   border-radius: 4px;
 }
 .clients-soc-link:hover .clients-icon {
@@ -555,7 +555,8 @@ img {
   margin-bottom: 20px;
 }
 .footer-click2 {
-  margin-left: 93px;
+  margin-left: auto;
+  position: relative;
 }
 .comeback-two {
   font-weight: 700;
@@ -579,7 +580,6 @@ img {
 }
 .comeback-btn-send {
   height: 50px;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -594,13 +594,11 @@ img {
   padding: 6px 22px;
   display: block;
   position: absolute;
-  margin-left: 12px;
-  margin-top: 31px;
+  margin-left: 370px;
+  margin-top: -50px;
   display: flex;
 }
-.btn-telegram {
-  position: relative;
-}
+
 .telegram-icon {
   fill: var(--white-color);
   margin-left: 10px;
@@ -817,8 +815,8 @@ img {
 
 .modal-close-btn:hover,
 .modal-close-btn :focus {
-  background-color: #188ce8;
-  fill: #ffffff;
+  background-color: var(--blue-backgraund);
+  fill: var(--white-color);
 }
 
 .is-hidden {
@@ -832,7 +830,7 @@ img {
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--black-text);
   text-align: center;
   margin: 0px 0px 12px 0px;
 }
@@ -850,14 +848,14 @@ img {
   padding-left: 35px;
 }
 .modal-input:focus + .input-icon {
-  fill: #2196f3;
+  fill: var(--blue-color);
 }
 .modal-input:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--blue-color);
   border-radius: 4px;
 }
 .modal-text:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--blue-color);
   border-radius: 4px;
 }
 .modal-label {
@@ -894,14 +892,25 @@ img {
   resize: none;
 }
 .input-btn-send {
-  width: 200px;
-  height: 50px;
-  background: #2196f3;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  border: none;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  min-width: 200px;
+  padding: 10px 50px;
+  background-color: var(--blue-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: #ffffff;
+  color: var(--white-color);
+  margin: 0 auto;
   margin-top: 30px;
-  margin-left: 25%;
+  display: block;
+  cursor: pointer;
 }
 .input-btn-send:hover,
 .input-btn-send:focus {
@@ -916,7 +925,7 @@ img {
 .check-text span {
   width: 16px;
   height: 15px;
-  border: 2px solid #212121;
+  border: 2px solid var(--black-text);
   border-radius: 2px;
   margin-right: 5px;
   display: flex;
@@ -928,7 +937,7 @@ img {
   fill: transparent;
 }
 .input-check:checked + .check-text span {
-  background-color: #2196f3;
+  background-color: var(--blue-backgraund);
   border: transparent;
   border-radius: 2px;
 }
@@ -936,7 +945,7 @@ img {
   border-color: #2196f3;
 }
 .input-check:checked + .check-text .check-icon {
-  fill: #ffffff;
+  fill: var(--white-color);
 }
 /* .check-text::before {
   content: '';
